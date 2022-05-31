@@ -5,20 +5,20 @@
 class New < Formula
   desc "cookiecutter wrapper, let you search through github for template"
   homepage ""
-  version "0.1.0"
+  version "0.1.2"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/mJehanno/new/releases/download/v0.1.0/new_0.1.0_Darwin_arm64.tar.gz"
-      sha256 "804a2b0b9b0328ec546788c769e908fb31a2241518bdcbe6937d5075d036e9e7"
+      url "https://github.com/mJehanno/new/releases/download/v0.1.2/new_0.1.2_Darwin_arm64.tar.gz"
+      sha256 "d2596421e3617a3e04777f69a91718b150602a07cd266cf19e5377c451805341"
 
       def install
         bin.install "new"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/mJehanno/new/releases/download/v0.1.0/new_0.1.0_Darwin_x86_64.tar.gz"
-      sha256 "918068d8d711e5dffb7ab67586bcb2a51820456c047d3d316553bc011b8b4ef4"
+      url "https://github.com/mJehanno/new/releases/download/v0.1.2/new_0.1.2_Darwin_x86_64.tar.gz"
+      sha256 "267ae44dc6bda88f75da37489f10b30e434a6afea75ab8473167ec8de371ab69"
 
       def install
         bin.install "new"
@@ -28,16 +28,16 @@ class New < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mJehanno/new/releases/download/v0.1.0/new_0.1.0_Linux_arm64.tar.gz"
-      sha256 "7ec35058f7421f07bdbbfaba702712b2d490094d1ab22c1376d9569a09ceff5f"
+      url "https://github.com/mJehanno/new/releases/download/v0.1.2/new_0.1.2_Linux_arm64.tar.gz"
+      sha256 "9a1924af12e268168785d29bc3b758696dc59757839b28c68a32048151a4c898"
 
       def install
         bin.install "new"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/mJehanno/new/releases/download/v0.1.0/new_0.1.0_Linux_x86_64.tar.gz"
-      sha256 "c9a2302db405c87c31ebf13812bd6212189c930ca28773893f00b9ee57666b88"
+      url "https://github.com/mJehanno/new/releases/download/v0.1.2/new_0.1.2_Linux_x86_64.tar.gz"
+      sha256 "021186d0dd9612db11a76bb5b94cd5b453b4429a0af71dac4768305672f6a8e8"
 
       def install
         bin.install "new"
